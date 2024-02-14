@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #312131;
+}
+
+#emoji {
+    font-size: 4rem;
+    filter:grayscale(100%);
+    cursor: pointer;
+    transition-property: transform, filter;
+    transition-duration: 300ms;
+}
+
+#emoji:hover {
+    transform: scale(2);
+    filter: grayscale(0);
+}
